@@ -1,0 +1,16 @@
+{
+  "covidResult": [
+    {
+      "name": "Balaji",
+      "age": "24",
+      "result": "negative",
+      "id": 2
+    },
+    {
+      "name": "Deva prakash",
+      "age": "23",
+      "result": "negative",
+      "id": 3
+    }
+  ]
+}

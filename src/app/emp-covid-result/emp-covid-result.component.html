@@ -1,0 +1,24 @@
+<form name="submitdata" #submitdata = "ngForm" (ngSubmit) = "submitForm(submitdata.value); submitdata.resetForm()">
+    <input type="text" name="name" #name = "ngModel" ngModel [(ngModel)] = "editname">
+    <input type="text" name="age" #name = "ngModel" ngModel [(ngModel)] = "editage">
+    <input type="text" name="result" #name = "ngModel" ngModel [(ngModel)] = "editresult">
+    <button type="submit">submit</button>
+</form>
+<table>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Result</th>
+      <th>Id</th>
+      <th>Action</th>
+    </tr>
+    <tr *ngFor = "let data of data">
+      <td>{{data.name}}</td>
+      <td>{{data.age}}</td>
+      <td>{{data.result}}</td>
+      <td>{{data.id}}</td>
+      <td><button (click) = "edit(data)">Edit</button><button (click) = "delete(data.id)">Delete</button></td>
+      
+    </tr>
+
+  </table>
